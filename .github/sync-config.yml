@@ -1,0 +1,32 @@
+repositories:
+  - source_repo: "https://github.com/rooch-network/rooch.git"
+    source_branch: "main"
+    target_path: "rooch_docs"
+    patterns:
+      - "+ docs/"
+      - "+ docs/**/"
+      - "+ frameworks/"
+      - "+ frameworks/**/"
+      - "+ /crates/"
+      - "+ /crates/rooch-open-rpc-spec/"
+      - "+ crates/rooch-open-rpc-spec/schemas/"
+      - "+ crates/rooch-open-rpc-spec/schemas/*.json"
+      - "- **/_*.mdx"
+      - "+ **/*.mdx"
+      - "+ **/*.md"
+
+  - source_repo: "https://github.com/rooch-network/rooch-book.git"
+    source_branch: "main"
+    target_path: "rooch_book"
+    patterns:
+      - "+ docs/"
+      - "+ docs/**/"
+      - "+ **/*.md"
+
+  - source_repo: "https://github.com/bitcoin/bitcoin.git"
+    source_branch: "master"
+    target_path: "bitcoin"
+    patterns:
+      - "+ doc/"
+      - "+ doc/**/"
+      - "+ **/*.md"
